@@ -13,7 +13,8 @@ BLIH_USERNAME="firstname.lastname@epitech.eu"
 #Don't EDIT if you don't know what you are doing
 if [ -z $BLIH_PASSWD ]
 then
-    read -s -p "Password: " BLIH_PASSWD
+    read -s -p "Password: " PASSWORD
+    BLIH_PASSWD="`echo -n "$PASSWORD" | sha512sum | cut -f1 -d' '`"
 fi
 
 if [ -z "$1" ]
