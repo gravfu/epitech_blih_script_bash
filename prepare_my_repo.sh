@@ -8,7 +8,7 @@
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #EDIT HERE:
-USERNAME="firstname.lastname@epitech.eu"
+BLIH_USERNAME="firstname.lastname@epitech.eu"
 
 #Don't EDIT if you don't know what you are doing
 if [ -z $BLIH_PASSWD ]
@@ -21,7 +21,7 @@ then
     echo 'Usage ./prepare_my_repo "REPO_NAME" "Optional_USERS"'
     echo 'Optionnal users: "User1@epitech.eu" "User2@epitech.eu "..."'
     exit;
-else  
+else
     blih -u $BLIH_USERNAME -t $BLIH_PASSWD repository create $1
     blih -u $BLIH_USERNAME -t $BLIH_PASSWD repository setacl $1 ramassage-tek r
 fi
