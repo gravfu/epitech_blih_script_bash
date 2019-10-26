@@ -16,7 +16,7 @@ Replace FirstName and LastName:
 $BLIH_PASSWORD can be set in .bashrc
 Replace MY_PASSWD and do: 
 ```bash
-echo -n "MY_PASSWD" | sha512sum | cut -f1 -d' ' | cat
+echo `echo -n "toto" | sha512sum | cut -f1 -d' '`
 ```
 Then copy the output to a variable named $BLIH_PASSWD like this (if your password is toto):
 ```bash
