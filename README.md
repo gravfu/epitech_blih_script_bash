@@ -8,7 +8,7 @@ Because it's really anoying to do everytime the same commands and doing my passw
 
 Replace FirstName and LastName:
 ```bash
-  USERNAME="firstname.lastname@epitech.eu"
+USERNAME="firstname.lastname@epitech.eu"
 ```
 
 ## I don't want to do put my password. Even one time. How can I do?
@@ -16,7 +16,7 @@ Replace FirstName and LastName:
 $BLIH_PASSWORD can be set in .bashrc
 Replace MY_PASSWD and do: 
 ```bash
-echo -n "MY_PASSWD" | sha512sum | cut -f1 -d' ' | cat
+echo `echo -n "toto" | sha512sum | cut -f1 -d' '`
 ```
 Then copy the output to a variable named $BLIH_PASSWD like this (if your password is toto):
 ```bash
@@ -25,11 +25,7 @@ export BLIH_PASSWD="10e06b990d44de0091a2113fd95c92fc905166af147aa7632639c41aa7f2
 
 ## OK, But it's really difficult. Can you help me?
 
-Ok, Just do:
-```bash
-echo -n "MY_PASSWORD" | sha512sum | cut -f1 -d' ' | cat >> ~/.bashrc
-```
-Replace MY_PASSWORD by your Epitech password.
+Sorry, you will have to put your password. But the good news is you will have to do it only one time.
 
 ## License:
 
