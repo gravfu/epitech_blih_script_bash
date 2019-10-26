@@ -7,7 +7,7 @@ Because it's really anoying to do everytime the same commands and doing my passw
 ## Adding your epitech Mail:
 
 Replace FirstName and LastName:
-```
+```bash
   USERNAME="firstname.lastname@epitech.eu"
 ```
 
